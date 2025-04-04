@@ -3,9 +3,9 @@ const w = window;
 const $header = d.getElementById("header");
 const $navMobile = d.getElementById("nav-mobil");
 const $navButton = d.getElementById("nav-button");
-const $section1 = d.getElementById("section-1");
+const $init = d.getElementById("init");
 const $section4 = d.getElementById("section-4");
-const $section5 = d.getElementById("section-5");
+const $amenities = d.getElementById("amenities");
 const $section7 = d.getElementById("section-7");
 const $textEffect = d.getElementById("text-effect");
 
@@ -61,9 +61,8 @@ async function textEffect(textList, $element) {
 }
 
 const textList = [
-  "Signature Interiors by B&B Italia",
-  "Step into timeless Italian elegance with interiors curated by B&B Italia",
-  "Every space reflects impeccable craftsmanship, refined textures, and thoughtful design—creating a sanctuary that feels both luxurious and effortlessly welcoming",
+  "The Best Location to Invest",
+  "Situated in one of the city's prime areas—San Francisco. Close to supermarkets, banks, restaurants, cafes, shopping plazas, and more.​ Urban Panamá",
 ];
 
 textEffect(textList, $textEffect);
@@ -94,13 +93,13 @@ const observerFunction = () => {
       });
     },
     {
-      threshold: 0.2,
+      threshold: 0,
     }
   );
 
-  observerSection.observe($section1);
+  observerSection.observe($init);
   observerSection.observe($section4);
-  observerSection.observe($section5);
+  observerSection2.observe($amenities);
   observerSection2.observe($section7);
 };
 
