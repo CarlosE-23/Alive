@@ -10,7 +10,6 @@ const $textEffect = d.getElementById("text-effect");
 // Header
 const deactivateHeader = () => {
   $header.classList.remove("active");
-  $navButton.classList.remove("scroll");
 };
 
 const activateHeader = () => {
