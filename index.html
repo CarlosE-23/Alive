@@ -15,26 +15,10 @@
     <link rel="stylesheet" href="./assets/css/index.css" />
   </head>
   <body>
-    <div id="nav-mobil">
-      <nav>
-        <li><a href="#init">Init</a></li>
-        <li><a href="#amenities">amenities</a></li>
-        <li><a href="#contact-us">contact Us</a></li>
-      </nav>
-    </div>
-    <div id="nav-button">
-      <div id="open"><i class="fa-solid fa-bars icon"></i></div>
-      <div id="close"><i class="fa-solid fa-xmark icon"></i></div>
-    </div>
     <header id="header">
       <div id="logo">
-        <h2><a href="#">ALIVE</a></h2>
+        <img src="./images/logo2.jpg" alt="" />
       </div>
-      <nav id="nav-desk">
-        <li><a href="#init">Init</a></li>
-        <li><a href="#amenities">Amenities</a></li>
-        <li><a href="#contact-us" class="contact-us">Contact Us</a></li>
-      </nav>
     </header>
     <div id="banner">
       <div id="banner-background">
@@ -45,14 +29,13 @@
       <div id="banner-content">
         <h1 class="primary-title">Mova</h1>
         <div class="social-container">
-          <a href="#" class="social"
+          <a
+            href="https://wa.me/50769220190?text=Hello,%20I%20would%20like%20more%20information..."
+            class="social"
             ><i class="fa-brands fa-whatsapp icon"></i
           ></a>
-          <a href="#" class="social"
+          <a href="https://instagram.com/panamigosrealty/" class="social"
             ><i class="fa-brands fa-instagram icon"></i
-          ></a>
-          <a href="#" class="social"
-            ><i class="fa-regular fa-envelope icon"></i
           ></a>
         </div>
       </div>
@@ -250,6 +233,12 @@
           </div>
         </div>
       </div>
+      <div class="button-container">
+        <a
+          href="https://wa.me/50769220190?text=Hello,%20I%20would%20like%20more%20information..."
+          >I Want To Know More</a
+        >
+      </div>
     </section>
 
     <section class="full-image">
@@ -278,12 +267,18 @@
                   name="name"
                   placeholder="Name"
                   class="primary-text"
+                  pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+"
+                  title="Letters and spaces only (e.g., John)"
+                  required
                 />
                 <input
                   type="text"
                   name="last-name"
                   placeholder="Last Name"
                   class="primary-text"
+                  pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+"
+                  title="Letters and spaces only (e.g., Smith)"
+                  required
                 />
               </div>
               <div>
@@ -292,30 +287,60 @@
                   name="email"
                   placeholder="Email"
                   class="primary-text"
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                  title="Please enter a valid email (e.g., user@example.com)"
+                  required
                 />
                 <input
                   type="text"
                   name="phone"
                   placeholder="Phone"
                   class="primary-text"
+                  pattern="[\+]\d{1,3}[-\s]?\d{1,4}[-\s]?\d{4,10}"
+                  title="Include country code (e.g., +1 800 5551234 or +44-20-7123-4567)"
+                  required
                 />
               </div>
               <h3 class="tertiary-title">Interes</h3>
               <div class="checkout">
                 <div>
-                  <input type="radio" id="investment" name="interest" />
+                  <input
+                    type="radio"
+                    id="investment"
+                    name="interest"
+                    value="Investment"
+                    required
+                  />
                   <label for="investment">Investment</label>
                 </div>
                 <div>
-                  <input type="radio" id="its-for-me" name="interest" />
+                  <input
+                    type="radio"
+                    id="its-for-me"
+                    name="interest"
+                    value="Its for me"
+                    required
+                  />
                   <label for="its-for-me">Its for me</label>
                 </div>
                 <div>
-                  <input type="radio" id="just-researching" name="interest" />
+                  <input
+                    type="radio"
+                    id="just-researching"
+                    name="interest"
+                    value="Just researching"
+                    required
+                  />
                   <label for="just-researching">Just researching</label>
                 </div>
                 <div>
-                  <input type="radio" id="its-for-a-client" name="interest" />
+                  <input
+                    type="radio"
+                    id="its-for-a-client"
+                    name="interest"
+                    value="Its for a client"
+                    required
+                  />
                   <label for="its-for-a-client">Its for a client</label>
                 </div>
               </div>
@@ -331,8 +356,8 @@
               </div>
               <h3 class="tertiary-title">Address</h3>
               <p class="secondary-text">
-                Calle 56 Este <br />Obarrio <br />
-                Panama City
+                Ground Floor <br />Financial Park <br />
+                Panama, Provincia de Panamá
               </p>
             </div>
             <div class="content">
@@ -343,8 +368,13 @@
               </div>
               <h3 class="tertiary-title">Social</h3>
               <ul>
-                <li><a href="#" class="secondary-text">Instagram</a></li>
-                <li><a href="#" class="secondary-text">Otracosa</a></li>
+                <li>
+                  <a
+                    href="https://instagram.com/panamigosrealty/"
+                    class="secondary-text"
+                    >Instagram</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="content">
@@ -354,7 +384,12 @@
                 </div>
               </div>
               <h3 class="tertiary-title">Email</h3>
-              <p class="secondary-text">nose@gmail.com</p>
+              <p class="secondary-text">
+                <a
+                  href="mailto:info@panamigosrealty.com?subject=Consulta&body=Hello,%20I%20would%20like%20more%20information..."
+                  >info@panamigosrealty.com</a
+                >
+              </p>
             </div>
             <div class="content">
               <div class="icon-container">
@@ -363,7 +398,12 @@
                 </div>
               </div>
               <h3 class="tertiary-title">Phone</h3>
-              <p class="secondary-text">(000) 000-000-000</p>
+              <p class="secondary-text" title="Whatsapp">
+                <a
+                  href="https://wa.me/50769220190?text=Hello,%20I%20would%20like%20more%20information..."
+                  >(507) 6922-0190</a
+                >
+              </p>
             </div>
           </div>
         </div>

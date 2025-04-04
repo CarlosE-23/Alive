@@ -19,9 +19,9 @@
   box-shadow: 0 0 10px #111;
 }
 
-#logo h2 a {
-  color: var(--primary-color);
-  font-size: clamp(2rem, 0.504rem + 2.358vw, 3.5rem);
+#logo img {
+  width: 50px;
+  aspect-ratio: 9/7;
 }
 
 #nav-desk {
@@ -151,10 +151,6 @@
 
   #nav-button {
     display: block;
-  }
-
-  #logo h2 a {
-    font-size: 1.5rem;
   }
 
   #nav-desk {
@@ -534,6 +530,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .amenity-card {
@@ -606,28 +603,28 @@
   }
 }
 
-#section-5.active .amenity-card {
+#amenities.active .amenity-card {
   animation: fadeIn 0.5s ease-out forwards;
   opacity: 0;
 }
 
 /* Retrasos para animación escalonada */
-#section-5.active .amenity-card:nth-child(1) {
+#amenities.active .amenity-card:nth-child(1) {
   animation-delay: 0.1s;
 }
-#section-5.active .amenity-card:nth-child(2) {
+#amenities.active .amenity-card:nth-child(2) {
   animation-delay: 0.2s;
 }
-#section-5.active .amenity-card:nth-child(3) {
+#amenities.active .amenity-card:nth-child(3) {
   animation-delay: 0.3s;
 }
-#section-5.active .amenity-card:nth-child(4) {
+#amenities.active .amenity-card:nth-child(4) {
   animation-delay: 0.4s;
 }
-#section-5.active .amenity-card:nth-child(5) {
+#amenities.active .amenity-card:nth-child(5) {
   animation-delay: 0.5s;
 }
-#section-5.active .amenity-card:nth-child(6) {
+#amenities.active .amenity-card:nth-child(6) {
   animation-delay: 0.6s;
 }
 /* section 7 */

@@ -15,7 +15,7 @@
   --opacity-primary-color: #eaeaea30;
   --secondary-color: #272a33;
   --tertiary-color: #dee0e3;
-  --quarter-color: #e7746f;
+  --quarter-color: #0b305c;
   --quintary-color: #3d4249;
 
   --primary-icon-size: 2.5rem;
@@ -80,6 +80,28 @@ ol {
   width: 100%;
   object-fit: cover;
   max-height: 70vh;
+}
+
+.button-container {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  width: max-content;
+  padding: 5px 10px;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.button-container a {
+  color: var(--primary-color);
+}
+
+.button-container:hover a {
+  color: var(--quintary-color);
+}
+
+.button-container:hover {
+  background-color: var(--primary-color);
 }
 
 @keyframes showLeft {

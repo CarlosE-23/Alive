@@ -1,8 +1,6 @@
 const d = document;
 const w = window;
 const $header = d.getElementById("header");
-const $navMobile = d.getElementById("nav-mobil");
-const $navButton = d.getElementById("nav-button");
 const $init = d.getElementById("init");
 const $section4 = d.getElementById("section-4");
 const $amenities = d.getElementById("amenities");
@@ -16,7 +14,6 @@ const deactivateHeader = () => {
 };
 
 const activateHeader = () => {
-  $navButton.classList.add("scroll");
   $header.classList.add("active");
 };
 
@@ -29,16 +26,6 @@ const headerEffect = () => {
 
 window.addEventListener("scroll", () => {
   headerEffect();
-});
-
-// Nav responsive
-
-$navButton.addEventListener("click", (e) => {
-  $navButton.classList.toggle("active");
-
-  if ($navButton.classList.contains("active"))
-    $navMobile.classList.add("active");
-  else $navMobile.classList.remove("active");
 });
 
 // Text Effect
