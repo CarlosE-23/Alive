@@ -24,137 +24,9 @@
   aspect-ratio: 9/7;
 }
 
-#nav-desk {
-  display: flex;
-  align-items: first baseline;
-}
-
-#nav-desk li a {
-  padding: 2px 0.6rem;
-  margin: 0 0.4rem;
-  position: relative;
-  cursor: pointer;
-  color: var(--tertiary-color);
-  font-weight: 200;
-  font-size: clamp(1rem, 0.003rem + 1.572vw, 2rem);
-}
-
-#nav-desk li a:hover {
-  color: var(--quarter-color);
-}
-
-#nav-desk li a.contact-us {
-  border: 2px solid var(--quarter-color);
-  border-radius: 5px;
-  padding: 4px 1.5rem;
-  transition: 300ms ease-in-out;
-  color: var(--quarter-color);
-}
-
-#nav-desk li a.contact-us:hover {
-  background-color: var(--quarter-color);
-  color: var(--primary-color);
-}
-
-#nav-desk li a::after {
-  position: absolute;
-  content: " ";
-  width: 0%;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border-bottom: 2px solid var(--quarter-color);
-}
-
-#nav-desk li a.contact-us::after {
-  content: none;
-}
-
-#nav-desk li a:hover::after {
-  width: 100%;
-  left: 0;
-  transform: translateX(0);
-  transition: 300ms ease-in-out;
-}
-
-/* Nav mobil */
-
-#nav-mobil {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 950;
-  background-color: #11111180;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateX(-100%);
-  transition: 600ms ease-in-out;
-}
-
-#nav-mobil.active {
-  transform: translateX(0);
-}
-
-#nav-mobil nav a {
-  display: flex;
-  padding: 3rem;
-  font-size: 1rem;
-  font-weight: 800;
-  color: var(--primary-color);
-  text-transform: uppercase;
-  text-align: center;
-}
-
-#nav-button {
-  position: fixed;
-  z-index: 999;
-  top: 0.3rem;
-  right: 2rem;
-  display: none;
-  transition: 300ms ease-in-out;
-}
-
-#nav-button.scroll {
-  top: 0.8rem;
-}
-
-#nav-button .icon {
-  color: var(--primary-color);
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-#nav-button #open {
-  display: block;
-}
-
-#nav-button #close {
-  display: none;
-}
-
-#nav-button.active #open {
-  display: none;
-}
-
-#nav-button.active #close {
-  display: block;
-}
-
 @media (max-width: 600px) {
   #header {
     padding: 0.3rem 2rem;
-  }
-
-  #nav-button {
-    display: block;
-  }
-
-  #nav-desk {
-    display: none;
   }
 }
 
@@ -172,6 +44,16 @@
   right: 0;
   bottom: 0;
   z-index: 1;
+  background-image: url("../../images/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 450px) {
+  #banner-bacground {
+    background-image: url("../../images/banner-responsive.jpg");
+  }
 }
 
 #banner-background::after {

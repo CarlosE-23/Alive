@@ -72,14 +72,27 @@ ol {
 
 .full-image {
   width: 100%;
-  max-height: 80vh;
   padding: 0;
+}
+
+.full-image .background {
+  min-height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.full-image .background.background-1 {
+  background-image: url("../../images/image-1.jpg");
+}
+
+.full-image .background.background-2 {
+  background-image: url("../../images/image-2.jpg");
 }
 
 .full-image .video {
   width: 100%;
   object-fit: cover;
-  max-height: 70vh;
 }
 
 .button-container {

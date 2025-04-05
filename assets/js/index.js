@@ -4,7 +4,6 @@ const $header = d.getElementById("header");
 const $init = d.getElementById("init");
 const $section4 = d.getElementById("section-4");
 const $amenities = d.getElementById("amenities");
-const $section7 = d.getElementById("section-7");
 const $textEffect = d.getElementById("text-effect");
 
 // Header
@@ -86,7 +85,6 @@ const observerFunction = () => {
   observerSection.observe($init);
   observerSection.observe($section4);
   observerSection2.observe($amenities);
-  observerSection2.observe($section7);
 };
 
 window.addEventListener("DOMContentLoaded", () => {
