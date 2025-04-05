@@ -11,12 +11,14 @@
   --secondary-text-size: clamp(0.85rem, 0.735rem + 0.369vw, 1rem);
   --responsive-secondary-text-size: clamp(1rem, 0.501rem + 0.786vw, 1.5rem);
 
-  --primary-color: #fff;
-  --opacity-primary-color: #eaeaea30;
-  --secondary-color: #272a33;
-  --tertiary-color: #dee0e3;
-  --quarter-color: #0b305c;
-  --quintary-color: #3d4249;
+  --primary-color: #fff; /* Blanco (se mantiene) */
+  --opacity-primary-color: #eaeaea30; /* Blanco con opacidad (se mantiene) */
+  --blue-dark: #0b305c; /* Azul oscuro original */
+  --blue-medium: #1a4b8c; /* Azul más vivo */
+  --blue-light: #3a7bd5; /* Azul claro */
+  --red-dark: #8e0000; /* Rojo oscuro */
+  --red-medium: #c62828; /* Rojo principal */
+  --red-light: #ff5f52;
 
   --primary-icon-size: 2.5rem;
 }
@@ -110,7 +112,7 @@ ol {
 }
 
 .button-container:hover a {
-  color: var(--quintary-color);
+  color: var(--blue-dark);
 }
 
 .button-container:hover {
